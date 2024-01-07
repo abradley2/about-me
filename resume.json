@@ -1,0 +1,22 @@
+{
+    "name": "Tony Bradley",
+    "blurb": "Polyglot programmer, specializing in functional frontends, functional backends",
+    "contactInfo": [
+        "antbradley91@gmail.com",
+        "github.com/abradley2",
+        "(203) 564-3509",
+        "6360 Montrose Rd, North Bethesda MD, 20852"
+    ],
+    "skills": [
+        "Go",
+        "Haskell",
+        "Elm",
+        "Clojure",
+        "TypeScript",
+        "PostgreSQL",
+        "Redis"
+    ],
+    "jobExperiences": [
+
+    ]
+}

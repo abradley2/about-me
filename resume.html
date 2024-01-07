@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Bradley</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+</head>
+
+
+<body class="code">
+    <div class="flex vh-100 vw-100 overflow-auto flex-column flex-row-ns">
+        <div class="w-100 mw5-ns bg-navy br bw2 b--blue shadow-1 white pb2 pb0-ns shadow-1">
+            <div class="f3 tc pt2">
+                {{.Name}}
+            </div>
+            {{range .ContactInfo}}
+            <div class="bw2 bl b--light-blue mt4 pl2 ml2 flex items-center">
+                <span>{{.}}</span>
+            </div>
+            <div class="bw2 mt2 bb b--light-blue ml4 w-100"></div>
+            {{end}}
+        </div>
+        <div class="w-100 bg-near-white">
+            <div class="bg-light-blue navy flex items-center pa3">
+                <span>
+                    {{.Blurb}}
+                </span>
+            </div>
+
+            <div class="center measure w-100 f6 pa3 nb2">
+                Work, work, work, work, work, work 
+            </div>
+
+            <div class="center measure w-100 f6 pa3 nb2">
+                Obligatory section of the resume where I list the name of technologies 
+                that I've used and enjoyed.
+            </div>
+            <div class="flex flex-wrap center measure justify-between">
+                {{range .Skills}}
+                <div class="pa2">
+                    <div class="pl2 pt2 bw2 bl bt b--light-blue dib">
+                        <div class="pa2 bw2 br bb b--navy bg-light-blue shadow-1">
+                            {{.}}
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
